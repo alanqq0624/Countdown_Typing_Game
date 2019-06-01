@@ -4,11 +4,21 @@
 
 ## Installation
 
-> TBD
-
+Compile the code
+```bash
+$ make build
+```
 ## Usage
 
-> TBD
+1. Run the main game program
+```bash
+$ make run
+```
+
+2. In gaming input:
+```
+typing
+```
 
 ## reference
 
