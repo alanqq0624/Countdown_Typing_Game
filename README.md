@@ -22,7 +22,7 @@ typing
 
 ## reference
 
-1. OpenJDK API documentation: (here)[https://devdocs.io/openjdk~8/]
+1. OpenJDK API documentation: [here](https://devdocs.io/openjdk~8/)
 
 ## question
 
