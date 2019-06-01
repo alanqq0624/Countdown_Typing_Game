@@ -1,0 +1,9 @@
+cd
+ipconfig
+ssh
+javac
+java
+gcc
+g++
+ls
+cps
