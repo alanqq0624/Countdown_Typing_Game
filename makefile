@@ -28,12 +28,15 @@ RES_DIR = yes
 # SOURCE_FILES = \
 # test/B.java \
 # test/A.java
-SOURCE_FILES = run.java
+SOURCE_FILES = \
+ctgame/clock.java\
+ctgame/run.java\
+
 # 設置你的java編譯器
 # Set your java compiler here:
 JAVAC = javac
 # 設置你的編譯選項
-JFLAGS = -encoding UTF-8
+JFLAGS = -encoding UTF-8 -Xlint
 
 # 用法：
 # make new: 在你的工程目錄下生成src, bin, res子目錄。
