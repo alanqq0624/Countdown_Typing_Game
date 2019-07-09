@@ -10,7 +10,7 @@ JAR_PKG = run.jar
 
 # 設置你的項目的入口點
 # Set your entry point of your java app:
-ENTRY_POINT = run
+ENTRY_POINT = ctgame/run
 
 # 是否需要res目錄，如果你的程序有圖片、文檔等，
 # 最好放入res目錄中。
