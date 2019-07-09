@@ -3,6 +3,7 @@ package ctgame;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.*;
 
 public class run {
 
@@ -59,23 +60,81 @@ public class run {
         }
     }
 
+    private static void DelayTime(int i){
+        try{
+            Thread.sleep(i);
+        }
+        catch(InterruptedException ex){
+            Thread.currentThread().interrupt();
+        }
+    }
+
     public static void main(String[] args) {
+        System.out.print("Waiting for server resopnse");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.println(".");
+        DelayTime(500);
+        System.out.print("IP check");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.print(".");
+        DelayTime(1000);
+        System.out.println("Success!!");
+        DelayTime(500);
+        System.out.println("Server Connected!!");
+        DelayTime(1000);
+        System.out.println("");
+        System.out.println("Welcome to A.S System");
+        DelayTime(1000);
+        System.out.println("Username: guest (Default login as a guest)");
         Scanner input_scanner = new Scanner(System.in);
         String input_string = new String();
         while (true) {
-            System.out.println("ENDA");
+            System.out.print("Password: ");
             if (input_scanner.hasNextLine()) {
                 input_string = input_scanner.nextLine();
-                System.out.println(input_string);
                 if (input_string.equals("typing")) {
+                    System.out.println("Enter the Typing Game.");
                     TypingGame();
                 }
                 else if (input_string.equals("clock")) {
+                    System.out.println("Enter the Clock GUI.");
                     clock cl = new clock();
                 }
                 else if (input_string.equals("end")) {
                     input_scanner.close();
                     return;
+                }
+                else if(input_string.equals("19870604")){
+                    System.out.print("Login Success");
+                    DelayTime(1000);
+                    System.out.print(".");
+                    DelayTime(1000);
+                    System.out.print(".");
+                    DelayTime(1000);
+                    System.out.print(".");
+                    DelayTime(1000);
+                    
+                    while (true) {
+                        System.out.print("Get file: ");
+                        int i = (int)(Math.random()*999999999);
+                        System.out.print(i);
+                        System.out.println(".log");
+                    }
+                }
+                else{
+                    System.out.println("Login Failed: Password incorrect.");
                 }
             }
         }
