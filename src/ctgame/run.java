@@ -95,7 +95,7 @@ public class run {
         System.out.println("Server Connected!!");
         DelayTime(1000);
         System.out.println("");
-        System.out.println("Welcome to A.S System");
+        System.out.println("Welcome to A.I. System");
         DelayTime(1000);
         System.out.println("Username: guest (Default login as a guest)");
         Scanner input_scanner = new Scanner(System.in);
